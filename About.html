@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Saraphina Ranoto</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+       <header>
+        <table  class="HeaderTable" >
+          <tr>
+            <td>
+              <img id="logo" src="./Assets/Images/logo..jpg">">
+            </td>
+         <td align="right" >
+          <nav >
+          <a href="Index.html">HOME</a>|<a href="#">ABOUT </a>|<a href="project.html">PROJECTS</a>|<a href="Contact.html">CONTACT </a>
+          </nav>
+        </td>
+        </tr>
+        </table>
+      </header>
+
+    <main>
+      <img id="theimage" src="./Assets/Images/Lesiba.jpg">
+      <p id="Pinfo"></p>
+      <p id="Paragraph1"></p>
+      <p id="Paragraph2"></p>
+      <p id="Paragraph3"></p>
+      <ul id="mylist"></ul>
+      <button><a style="padding-left:10px; color: black;" href="project.html">PROJECTS</a></button>
+    </main>
+
+    <script>
+       // learning how to output my info with JS
+      
+     let name= "Full Names: Lesiba Saraphina";
+     let surname="Surname: Ranoto";
+     let  Age='Age: 28';
+     let  school='Scool: Vaal university of Technology';
+     let born='Born: Polokwane';
+     let Qualification='Qualification: Advanced Diploma in Information Technology';
+     let Occupation= 'Currently : Postgradaute Diploma Student';
+
+ 
+     document.getElementById("Pinfo").innerHTML=name + "<br>" + surname + "<br>" + Age + "<br>"+  school + "<br>"+ born + "<br>" +Qualification+ "<br>" +Occupation + "<br>";
+     document.getElementById('Paragraph1').innerHTML="I am curretly busy with my Poastgraduate Diploma in IT and " + 
+     " for first semester I have majored in Business Intelligence, Sofware Engineering and Advanced Support Techniques and Technologies. " + 
+     " I will complete this qualification December 2022.";
+
+     document.getElementById('Paragraph2').innerHTML="During my studies for Advanced Diploma I have majored in Statistic, Emerging Technologies," +
+      "IT Management, Advanced Database, User Experince Design and Research Methodology. And for my National Diploma " +
+      "I have majored in Business Analysis, software Development and Information Systems. " +
+      "I have learned to create websites at Mlab Web Development bootcamp, working on a portfolio was one of the projects and" +
+      " finally developed the final landing page for base apparel landing page. ";
+
+      document.getElementById('Paragraph3').innerHTML="I have also worked on various projects at the GirlCode Python developer bootcamp." +
+     "I have worked on projects like the hangman game, and  netflix landing page with HTML, CSS and React.js. " +
+     "I am currently working on the Tesla landing page. "+
+     "Some of the skills I have acquired during and after the bootcamps include:<br> " ;
+
+
+     let info =["Team work", "Good communication","Leadership skills", "Programming Ability (Python, SQL, HTML, CSS, JavaScript, Github, React.js, Firebase and Java)"];
+     let list=document.getElementById("mylist");
+     
+     info.forEach((item) => {
+       let li = document.createElement("li");
+       li.innerText= item;
+       list.appendChild(li);
+     });
+  
+    </script>
+
+     
+    <footer>
+      <table id="FooterTable" class="center">
+        <tr >
+          <td >
+              <p align="center"> Find me on Linkedin or Email me:<br>
+                <a href="https://www.linkedin.com/in/saraphina-ranoto-1b9443188/" target="_blank">Linkedin</a> <br>
+                saraphinashanell@gmail.com
+               </p>
+                <p align="center">For more information call on the number below:<br>
+                  <a href="Make a call 0614135268">0614135268</a></p>
+             </td>
+        </tr>
+      </table>
+    </footer>
+   
+    </body>
+
+</html>

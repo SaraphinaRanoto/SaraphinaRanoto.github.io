@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="./css/style.css">
+      </head>
+      
+<body>
+    
+    <header >
+        <table  class="HeaderTable"  >
+          <tr>
+            <td>
+              <img id="logo" src="./Assets/Images/logo..jpg">
+            </td>
+         <td align="right" >
+          <nav >
+          <a href="Index.html">HOME</a><a href="About.html">ABOUT </a><a href="#">PROJECTS</a><a href="Contact.html">CONTACT</a>
+          </nav>
+        </td>
+        </tr>
+        </table>
+      </header>
+      <main>
+          <p id="Paragraph4" style="padding:20px; width: 40%;"></p>
+          
+          <table>
+            <tr>
+              <td>
+                <img class="portfolio-1"  src="./Assets/Images/hangman.png">
+                <p id="hangman"></p>
+              </td>
+              <td> 
+                <img class="portfolio-2"  src="./Assets/Images/netflix-react.jpg">
+                <p id="react-netflix"></p>
+              </td>
+              </tr>
+              <tr>
+              <td>
+                <img class="portfolio-3" src="./Assets/Images/netfilx-html.jpg">
+                <p id="html-netflix"></p>
+              </td>
+              <td>
+                <img class="portfolio-4"  src="./Assets/Images/base-app.jpg">
+                <p id="base-app" ></p>
+              </td>
+            </tr>
+          </table>
+
+
+         
+
+
+      </main>
+
+      <script>
+        document.getElementById('Paragraph4').innerHTML="Click on the titles to see projects I have previously worked on, " +
+        "please feel free to leave feedback on how I can improve. Thank you. ";
+
+
+         let text1 = "The hangman game introduction to JavaScript"
+         hangman_link = "<a href='https://github.com/SaraphinaRanoto/hangman.git' target='_blank'>" + text1 + "</a>";
+         document.getElementById("hangman").innerHTML = hangman_link;
+
+         let text2 = "Netflix landing page with React.js"
+         react_netflix = "<a href='https://github.com/SaraphinaRanoto/React-Netflix.git' target='_blank'>" + text2 + "</a>";
+         document.getElementById("react-netflix").innerHTML = react_netflix;
+
+        let text3 = "Netflix landing page with HTML"
+        html_netflix = "<a href='https://github.com/SaraphinaRanoto/Netflix-.git' target='_blank'>" + text3 + "</a>";
+        document.getElementById("html-netflix").innerHTML = html_netflix;
+
+        let text4 = "Base Apparel landing page"
+        base_app = "<a href='https://github.com/SaraphinaRanoto/Base-Apperal-landing-page.git' target='_blank'>" + text4 + "</a>";
+        document.getElementById("base-app").innerHTML = base_app;
+      </script>
+
+       <footer>
+      <table id="FooterTable" class="center" >
+        <tr>
+          <td>
+              <p align="center"> Find me on Linkedin or Email me:<br>
+                <a href="https://www.linkedin.com/in/saraphina-ranoto-1b9443188/" target="_blank">Linkedin</a> <br>
+                saraphinashanell@gmail.com
+               </p>
+                <p align="center">Coded By:<br>
+                  <a href="Website"> Saraphina Ranoto</a></p>
+             </td>
+        </tr>
+      </table>
+      </footer>  
+      
+</body>
+</html>
+
+
+
+
+
